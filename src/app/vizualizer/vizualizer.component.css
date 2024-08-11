@@ -1,0 +1,226 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgb(12, 14, 34);
+}
+
+
+.navbar h1{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background-color: salmon;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    padding: .5em .6em;
+}
+
+.btn:disabled{
+    background-color: rgb(146, 146, 146);
+    color: black;
+}
+
+.range-control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+input{
+    cursor: pointer;
+}
+
+.range-control label{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.gap{
+    gap: 10px;
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(12, 14, 34);
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.option{
+    position: absolute;
+    margin-top: 2px;
+    min-width: 150px;
+    top: 64px;
+    list-style-type: none;
+    transition: all 0.5s linear;
+    display: none;
+    border-radius: 4px;
+}
+
+.option li{
+    background-color: rgb(12, 14, 34);
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: .4em .4em;
+    cursor: pointer;
+}
+
+.option li:hover{
+    background-color: cadetblue;
+}
+
+.drop-down:hover{
+    background-color: cadetblue;
+}
+
+
+
+
+.clicked{
+    display: block !important;
+    transition: all 0.5s linear;
+}
+
+.anime{
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+}
+
+i{
+    font-size: 1.2rem !important;
+    transition: all 0.2s linear;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.banner i{
+    font-size: 1.5rem !important;
+}
+
+.banner p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(12, 60, 114);
+    padding: 10px 20px;
+}
+
+.details{
+    font-size: 1.1rem;
+    margin-top: 120px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom a, .bottom i{
+    color: rgb(102, 102, 102);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.mute {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.mute:hover {
+    color: rgb(158, 158, 158);
+}
+
+@media screen and (max-width:1010px) {
+    .range-control input{
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:817px) {
+    .option{
+        top: 95px;
+    }
+}
+
+@media screen and (max-width:813px) {
+    .option{
+        top: 55px;
+    }
+}
+
+@media screen and (max-width:718px) {
+    .option{
+        top: 85px;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .option{
+        top: 95px;
+    }
+}
+
+@media screen and (max-width:458px) {
+    .range-control input{
+        width: 60px;
+    }
+}
+
+@media screen and (max-width:518px){
+    .option{
+        top: 140px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width:256px){
+    .option{
+        top: 180px;
+    }
+}

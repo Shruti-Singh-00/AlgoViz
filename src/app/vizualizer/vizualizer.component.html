@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <div class="container gap">
+      <div class="container gap p-2">
+        <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px; color: white;">AlgoViz</a>
+        <div class="range-control p-2">
+          <label>Size</label>
+          <input type="range"  #size (input)="change=size.value" min="6" max="130'" value="6" id="size" [disabled]="disable">
+        </div>
+        <div class="range-control p-2">
+          <label>Speed</label>
+          <input type="range" min="0" max="930" id="speed" value="0" #speed (input)="onSpeedChange(speed.value)">
+        </div>
+        <div class="dropdown-container p-2">
+          <div class="drop-down" (click)="this.dropdownClick = !this.dropdownClick">{{selectedAlgo? selectedAlgo:'Algorithm'}}<i class="material-icons" [ngClass]="{anime:dropdownClick}">arrow_drop_down</i>  </div>
+          <ul class="option" [ngClass]="{clicked:dropdownClick}">
+            <li (click)="onSelected('Bubble Sort')" (click)="this.visualMsg='Visualize!'">Bubble Sort</li>
+            <li (click)="onSelected('Selection Sort')" (click)="this.visualMsg='Visualize!'">Selection Sort</li>
+            <li (click)="onSelected('Insertion Sort')" (click)="this.visualMsg='Visualize!'">Insertion Sort</li>
+            <li (click)="onSelected('Quick Sort')" (click)="this.visualMsg='Visualize!'">Quick Sort</li>
+            <li (click)="onSelected('Merge Sort')" (click)="this.visualMsg='Visualize!'">Merge Sort</li>
+          </ul>
+        </div>
+        <button class="btn" (click)="onVisualize()" id="visualize" [disabled]="disable">{{ visualMsg }}</button>
+        <span class="material-symbols-outlined mute p-2" (click)="onMute()" id="mute">volume_up</span>
+      </div>
+  </div>
+  </nav>
+  
+  <div class="banner bg-light" [ngSwitch]="selectedAlgo">
+    <p *ngSwitchCase="'Bubble Sort'"><i><strong>Bubble Sort </strong></i> works by <i><strong>repeatedly swapping</strong></i> the adjacent elements.</p>
+    <p *ngSwitchCase="'Selection Sort'">The <i><strong>Selection Sort</strong></i> works by <i><strong>selecting the smallest element</strong></i> and putting it at its correct position</p>
+    <p *ngSwitchCase="'Insertion Sort'"><i><strong>Insertion Sort</strong></i>  works similar to the way you sort <i><strong>playing cards</strong></i>  in your hands.</p>
+    <p *ngSwitchCase="'Quick Sort'"><i><strong>Quick Sort </strong></i>is a <i><strong>divide-and-conquer</strong></i> Algorithm, it works by selecting a '<i><strong>pivot</strong></i>' element.</p>
+    <p *ngSwitchCase="'Merge Sort'"><i><strong>Merge sort</strong></i> is a <i><strong>divide-and-conquer</strong></i> Algorithm that works by dividing an <i><strong>array into smaller subarrays</strong></i>.</p>
+    <p *ngSwitchDefault>Select an <i><strong>Algorithm </strong></i>to Visualize it.</p>
+  </div>
+  <div class="main">
+    <app-array [onSizeChange]="change" #array="array"></app-array>
+    <p class="details" id="details"></p>
+    <p class="details" id="temp" style="margin-top: 10px; font-size: 1rem;"></p>
+  
+    <div class="bottom">
+      <a href="https://github.com/Shruti-Singh-00">Source Code <i class="fa fa-github"></i></a>
+    </div>
+  </div>
+  

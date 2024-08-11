@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bar{
+    background-color: #ff339962;
+    width: 110px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1vw;
+    color: white;
+    transition: height 0.1s ease-in;
+}
+
+.indx{
+    color: rgb(14, 13, 13);
+    min-height: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.fa{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left:0.5em;
+}
+
+.fa:hover{
+    color: rgb(145, 143, 143);
+}
+
+@media screen and (max-width:1010px) {
+    html{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:610px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:813px) {
+    html{
+        font-size: 12px;
+    }
+}

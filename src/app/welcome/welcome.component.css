@@ -1,0 +1,50 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+
+  .nf-container{
+    height: 100vh;
+}
+
+p{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: salmon;
+    }
+}
+
+.decor{
+    font-weight: 600;
+    color: salmon;
+    font-size: 100px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom a, .bottom i{
+  color: rgb(102, 102, 102);
+  font-size: 1em;
+  text-decoration: none;
+}

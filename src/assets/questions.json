@@ -1,0 +1,183 @@
+{
+    "questions": [{
+            "Id": 1,
+            "questionText": "Which if the following is/are the levels of implementation of data structure",
+            "options": [{
+                    "text": "Abstract level"
+                },
+                {
+                    "text": "Application Level"
+                },
+                {
+                    "text": "Implementation level"
+                },
+                {
+                    "text": "All of the above",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "questionText": "A binary search tree whose left subtree and right subtree differ in height by at most 1 unit is called",
+            "options": [{
+                    "text": "AVL tree",
+                    "correct": true
+                },
+                {
+                    "text": "Red-black tree"
+                },
+                {
+                    "text": "Lemma tree"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ]
+        },
+        {
+            "Id": 3,
+            "questionText": "……………….. level is where the model becomes compatible executable code",
+            "options": [{
+                    "text": "Abstract level"
+                },
+                {
+                    "text": "Application Level"
+                },
+                {
+                    "text": "Implementation level",
+                    "correct": true
+                },
+                {
+                    "text": "All of the above"
+                }
+            ]
+        },
+        {
+            "Id": 4,
+            "questionText": "Stack is also called as",
+            "options": [{
+                    "text": "Last in first out",
+                    "correct": true
+                },
+                {
+                    "text": "First in last out"
+                },
+                {
+                    "text": "Last in last out"
+                },
+                {
+                    "text": "First in first out"
+                }
+            ]
+        },
+        {
+            "Id": 5,
+            "questionText": "Which of the following is true about the characteristics of abstract data types? i) It exports a type. ii) It exports a set of operations",
+            "options": [{
+                    "text": "True, False"
+                },
+                {
+                    "text": "False, True"
+                },
+                {
+                    "text": "True, True",
+                    "correct": true
+                },
+                {
+                    "text": "False, False"
+                }
+            ]
+        },
+        {
+            "Id": 6,
+            "questionText": "…………… is not the component of data structure.",
+            "options": [{
+                    "text": "Operations"
+                },
+                {
+                    "text": "Storage Structures"
+                },
+                {
+                    "text": "Algorithms"
+                },
+                {
+                    "text": "None of above",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "Id": 7,
+            "questionText": "Which of the following is not the part of ADT description?",
+            "options": [{
+                    "text": "Data"
+                },
+                {
+                    "text": "Operations"
+                },
+                {
+                    "text": "Both of above"
+                },
+                {
+                    "text": "None of above",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "Id": 8,
+            "questionText": "Inserting an item into the stack when stack is not full is called …………. Operation and deletion of item form the stack, when stack is not empty is called ………..operation.",
+            "options": [{
+                    "text": "push, pop",
+                    "correct": true
+                },
+                {
+                    "text": " pop, push"
+                },
+                {
+                    "text": "insert, delete"
+                },
+                {
+                    "text": "delete, insert"
+                }
+            ]
+        },
+        {
+            "Id": 9,
+            "questionText": "……………. Is a pile in which items are added at one end and removed from the other.",
+            "options": [{
+                    "text": "stack"
+                },
+                {
+                    "text": "queue",
+                    "correct": true
+                },
+                {
+                    "text": "List"
+                },
+                {
+                    "text": "None of above"
+                }
+            ]
+        },
+        {
+            "Id": 10,
+            "questionText": "………… is very useful in situation when data have to stored and then retrieved in reverse order.",
+            "options": [{
+                    "text": "stack",
+                    "correct": true
+                },
+                {
+                    "text": "queue"
+                },
+                {
+                    "text": "List"
+                },
+                {
+                    "text": "Link List"
+                }
+            ]
+        }
+    ]
+}

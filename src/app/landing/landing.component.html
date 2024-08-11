@@ -1,0 +1,64 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px;">AlgoViz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle b px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                Visualizer
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Bubble Sort</a><br>
+                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Selection Sort</a><br>
+                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Insertion Sort</a><br>
+                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Quick Sort</a><br>
+                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Merge Sort</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                    Quiz
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Easy</a><br>
+                    <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Medium</a><br>
+                    <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Hard</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                    Interview Questions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Questions</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</div>
+
+<div class="d-flex align-items-center justify-content-center nf-container">
+    <div class="bg-light p-5">
+        <p class="h2 py-2">Data Structures and Algorithms</p>
+        <p class="h5">Fun Way to Leran DSA...</p>
+        <div class="components p-5">
+            <a [routerLink]="quizComponent.link" class="circle">
+                <!-- <i class="display-1 decor fas fa-{{ quizComponent.icon }}"></i> -->
+                <p style="font-size: xx-large; font-weight: 600;">{{ quizComponent.label }}</p>
+            </a>
+            <a [routerLink]="visualizerComponent.link" class="circle">
+                <i class="fas fa-{{ visualizerComponent.icon }}"></i>
+                <p style="font-size: xx-large; font-weight: 600;">{{ visualizerComponent.label }}</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="bottom p-3">
+  <a href="https://github.com/Shruti-Singh-00">Source Code <i class="fa fa-github"></i></a>
+</div>
