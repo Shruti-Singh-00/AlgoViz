@@ -17,3 +17,15 @@ li .card:hover {
 ol {
     padding: 0;
 }
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom a, .bottom i{
+    color: rgb(102, 102, 102);
+    font-size: 1em;
+    text-decoration: none;
+}

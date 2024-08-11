@@ -1,4 +1,5 @@
-<nav class="navbar">
+<div style="background-color: papayawhip;">
+  <nav class="navbar">
     <div class="container gap">
       <div class="container gap p-2">
         <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px; color: white;">AlgoViz</a>
@@ -26,7 +27,7 @@
   </div>
   </nav>
   
-  <div class="banner bg-light" [ngSwitch]="selectedAlgo">
+  <div class="banner" [ngSwitch]="selectedAlgo">
     <p *ngSwitchCase="'Bubble Sort'"><i><strong>Bubble Sort </strong></i> works by <i><strong>repeatedly swapping</strong></i> the adjacent elements.</p>
     <p *ngSwitchCase="'Selection Sort'">The <i><strong>Selection Sort</strong></i> works by <i><strong>selecting the smallest element</strong></i> and putting it at its correct position</p>
     <p *ngSwitchCase="'Insertion Sort'"><i><strong>Insertion Sort</strong></i>  works similar to the way you sort <i><strong>playing cards</strong></i>  in your hands.</p>
@@ -43,4 +44,4 @@
       <a href="https://github.com/Shruti-Singh-00">Source Code <i class="fa fa-github"></i></a>
     </div>
   </div>
-  
+</div>

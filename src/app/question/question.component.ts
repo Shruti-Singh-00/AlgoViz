@@ -61,8 +61,6 @@ export class QuestionComponent implements OnInit {
         this.resetCounter();
         this.getProgressPercent();
       }, 1000);
-
-      this.points -= 10;
     }
   }
   startCounter() {
@@ -72,7 +70,6 @@ export class QuestionComponent implements OnInit {
         if (this.counter === 0) {
           this.currentQuestion++;
           this.counter = 60;
-          this.points -= 10;
         }
       });
     setTimeout(() => {

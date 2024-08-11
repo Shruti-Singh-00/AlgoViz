@@ -1,59 +1,60 @@
-<nav class="navbar bg-dark">
+<div style="background-color: rgb(247, 247, 249);" class="p-3">
+    
+    <div class="text-center p-4">
+        <p class="h1" style="font-weight: 700;">Data Structures and Algorithms Quiz!</p>
+    </div>
+    
     <div class="container">
-      <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px; color: white;">AlgoViz</a>
+        <div class="card" style="background-color: rgb(253, 251, 242)">
+            <ng-container *ngIf="!isQuizCompleted" style="background-color: rgb(255, 251, 237);">
+                <div class="d-flex justify-content-around py-3" style="background-color: rgb(255, 251, 237);">
+                    <div class="score" style="background-color: rgb(255, 251, 237);">
+                        <h5>{{points}} Points</h5>
+                    </div>
+                    <div class="question-remain" style="background-color: rgb(255, 251, 237);">
+                        <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+                    </div>
+                    <div class="timer" style="background-color: rgb(255, 251, 237);">
+                        <h5>{{counter}} sec ⏱</h5>
+                    </div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="question">
+                    <div class="card" style="background-color: rgb(255, 251, 237);">
+                        <p style="font-weight: bold;">{{questionList[currentQuestion]?.questionText}}</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <ol *ngFor="let option of questionList[currentQuestion]?.options">
+                        <li (click)="answer(currentQuestion+1,option)">
+                            <div appChangeBg [isCorrect]="option.correct" class="card" style="background-color: rgb(255, 251, 237);">
+                                {{option.text}}
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </ng-container>
+    
+            <ng-container *ngIf="isQuizCompleted">
+                <div class="row justify-content-between text-center p-5">                
+                    <div class="result">
+                        <h3 style="font-weight: bold; color: green;">Congratulations!! <br>You have completed the quiz.</h3>
+                        <h4 class="py-2" style="font-weight: bold; color: goldenrod;"><br>Below is your result:</h4>
+                        <h5>Total Question Attempted : {{questionList.length}} </h5>
+                        <h5>Total Correct Answered : {{correctAnswer}}</h5>
+                        <h5>Total Wrong Answered : {{inCorrectAnswer}} </h5>
+                        <h5>Your Score : {{points}} Points </h5><br>
+                        <button class="btn" style="color: coral;" routerLink="/landing">Back to Home</button>
+                    </div>
+                </div>
+            </ng-container>
+    
+        </div>
     </div>
-</nav>
 
-<div class="text-center p-3">
-    <p class="h1" style="font-weight: 700;">Data Structures and Algorithms Quiz!</p>
-</div>
-
-<div class="container">
-    <div class="card">
-
-        <ng-container *ngIf="!isQuizCompleted">
-            <div class="d-flex justify-content-around py-3">
-                <div class="score">
-                    <h5>{{points}} Points</h5>
-                </div>
-                <div class="question-remain">
-                    <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
-                </div>
-                <div class="timer">
-                    <h5>{{counter}} sec ⏱</h5>
-                </div>
-            </div>
-            <div class="progress mb-3">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="question">
-                <div class="card">
-                    <p style="font-weight: bold;">{{questionList[currentQuestion]?.questionText}}</p>
-                </div>
-            </div>
-            <div class="options">
-                <ol *ngFor="let option of questionList[currentQuestion]?.options">
-                    <li (click)="answer(currentQuestion+1,option)">
-                        <div appChangeBg [isCorrect]="option.correct" class="card">
-                            {{option.text}}
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </ng-container>
-
-        <ng-container *ngIf="isQuizCompleted">
-            <div class="row justify-content-between text-center p-5">                
-                <div class="result">
-                    <h3 style="font-weight: bold;">Congratulations!! <br>You have completed the quiz.</h3>
-                    <h4 class="py-2" style="font-weight: bold;"><br>Below is your result:</h4>
-                    <h5>Total Question Attempted : {{questionList.length}} </h5>
-                    <h5>Total Correct Answered : {{correctAnswer}}</h5>
-                    <h5>Total Wrong Answered : {{inCorrectAnswer}} </h5>
-                    <h5>Your Score : {{points}} Points </h5>
-                </div>
-            </div>
-        </ng-container>
-
-    </div>
+    <div class="bottom p-5">
+        <a href="https://github.com/Shruti-Singh-00">Source Code <i class="fa fa-github"></i></a>
+      </div>
 </div>
