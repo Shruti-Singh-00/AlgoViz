@@ -31,6 +31,14 @@ p{
     }
 }
 
+.algn{
+  font-size: xx-large; 
+  font-weight: 700; 
+  padding-right: 150px; 
+  padding-left: 50px; 
+  color: white;
+}
+
 .decor{
     font-weight: 600;
     color: salmon;
@@ -47,4 +55,20 @@ p{
   color: rgb(102, 102, 102);
   font-size: 1em;
   text-decoration: none;
+}
+
+@media (max-width : 480px) {
+  .container {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .algn{
+    text-align: center;
+    font-size: xx-large; 
+    font-weight: 600; 
+    padding-right: 100px; 
+    padding-left: 100px; 
+    color: white;
+  }
 }

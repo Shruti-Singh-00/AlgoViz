@@ -167,6 +167,14 @@ i{
     text-decoration: none;
 }
 
+.algn{
+    font-size: xx-large; 
+    font-weight: 700; 
+    padding-right: 50px; 
+    padding-left: 30px; 
+    color: white;
+}
+
 .mute {
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -209,6 +217,13 @@ i{
 @media screen and (max-width:458px) {
     .range-control input{
         width: 60px;
+    }
+    .algn{
+        font-size: xx-large; 
+        font-weight: 600; 
+        padding-right: 100px; 
+        padding-left: 100px; 
+        color: white;
     }
 }
 
