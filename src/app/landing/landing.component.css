@@ -95,6 +95,14 @@ p{
     }
 }
 
+.algn{
+  text-align: none;
+  padding-right: 150px; 
+  padding-left: 50px;
+  font-size: xx-large; 
+  font-weight: 700;
+}
+
 .decor{
     font-weight: 600;
     color: salmon;
@@ -208,6 +216,7 @@ p{
 @media (max-width: 480px) {
   .components {
     flex-direction: column;
+    align-items: center;
   }
   .circle {
     width: 80px;
@@ -224,5 +233,12 @@ p{
 
   .rounded-20 {
     border-radius: 0px;
+  }
+  
+  .algn{
+    padding-right: 100px; 
+    padding-left: 100px;
+    font-size: xx-large; 
+    font-weight: 700;
   }
 }
