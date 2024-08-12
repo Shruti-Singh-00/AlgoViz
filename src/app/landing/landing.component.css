@@ -87,10 +87,6 @@
     transform: scale(1.1);
   }
 
-  .nf-container{
-    height: 100vh;
-}
-
 p{
     text-align: center;
     a{
@@ -217,5 +213,16 @@ p{
     width: 80px;
     height: 80px;
     margin: 5px;
+  }
+  .fs-xxl {
+    font-size: medium;
+  }
+  
+  .fw-600 {
+    font-weight: 400;
+  }
+
+  .rounded-20 {
+    border-radius: 0px;
   }
 }
