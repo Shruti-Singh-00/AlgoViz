@@ -1,8 +1,9 @@
 <div style="background-color: papayawhip;">
   <nav class="navbar">
     <div class="container gap">
-      <div class="container gap p-2">
-        <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px; color: white;">AlgoViz</a>
+      <div class="container gap">
+        <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 50px; padding-left: 30px; color: white;">AlgoViz</a>
+        <button class="btn m-4" (click)="array.ngOnInit()" id="new" [disabled]="disable">New Array</button>
         <div class="range-control p-2">
           <label>Size</label>
           <input type="range"  #size (input)="change=size.value" min="6" max="130'" value="6" id="size" [disabled]="disable">

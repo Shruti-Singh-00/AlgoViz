@@ -1,64 +1,74 @@
 <div style="background-color: lightsalmon">
-    <nav class="navbar navbar-expand-lg navbar-light p-4" style="background-color: papayawhip">
-        <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px;">AlgoViz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle b px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
-                Visualizer
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Bubble Sort</a><br>
-                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Selection Sort</a><br>
-                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Insertion Sort</a><br>
-                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Quick Sort</a><br>
-                <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Merge Sort</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
-                    Quiz
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Easy</a><br>
-                    <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Medium</a><br>
-                    <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Hard</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
-                    Interview Questions
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Questions</a>
-                </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-<div class="d-flex align-items-center justify-content-center nf-container">
-    <div class="p-5" style="background-color: papayawhip; border-radius: 20px;">
-        <p class="h2 py-2">Data Structures and Algorithms</p>
-        <p class="h5">Fun Way to Learn DSA...</p>
-        <div class="components p-4">
-            <a [routerLink]="quizComponent.link" class="circle">
-                <!-- <i class="display-1 decor fas fa-{{ quizComponent.icon }}"></i> -->
-                <p style="font-size: xx-large; font-weight: 600;">{{ quizComponent.label }}</p>
-            </a>
-            <a [routerLink]="visualizerComponent.link" class="circle">
-                <i class="fas fa-{{ visualizerComponent.icon }}"></i>
-                <p style="font-size: xx-large; font-weight: 600;">{{ visualizerComponent.label }}</p>
-            </a>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light p-4" style="background-color: papayawhip">
+    <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 700; padding-right: 150px; padding-left: 50px;">AlgoViz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle b px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+            Visualizer
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Bubble Sort</a><br>
+            <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Selection Sort</a><br>
+            <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Insertion Sort</a><br>
+            <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Quick Sort</a><br>
+            <a [routerLink]="visualizerComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Merge Sort</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+            Quiz
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Easy</a><br>
+            <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Medium</a><br>
+            <a [routerLink]="quizComponent.link" class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Hard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+            Interview Questions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="px-3" href="#" style="text-decoration: none; font-weight: bold; color: coral;">Questions</a>
+          </div>
+        </li>
+      </ul>
     </div>
-</div>
+  </nav>
 
+  <div class="p-3">
+    <p class="h2 py-2">Data Structures and Algorithms</p>
+    <p class="h5">Fun Way to Learn DSA...</p>
+  </div>
 
-<div class="bottom p-3">
-  <a href="https://github.com/Shruti-Singh-00">Source Code <i class="fa fa-github"></i></a>
-</div>
+  <div class="container nf-container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5 bg-papaya rounded-20" style="padding: 30px 0px 0px 40px;">
+        <p class="h4">Quiz. Learn. Excel.</p>
+        <p >Get ready to unleash your inner quiz master!<br> Quiz it Up!</p>
+        <div class="components">
+          <a [routerLink]="quizComponent.link" class="circle">
+            <p class="fs-xxl fw-600">{{ quizComponent.label }}</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5 bg-papaya rounded-20" style="padding: 30px 40px 0px 0px;">
+        <p class="h4">Visualize to Realize!</p>
+        <p>Bring Algorithms to Life with Interactive Visualizations!</p>
+        <div class="components">
+          <a [routerLink]="visualizerComponent.link" class="circle">
+            <p class="fs-xxl fw-600">{{ visualizerComponent.label }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom p-3">
+    <a href="https://github.com/Shruti-Singh-00">Source Code <i class="fa fa-github"></i></a>
+  </div>
 </div>

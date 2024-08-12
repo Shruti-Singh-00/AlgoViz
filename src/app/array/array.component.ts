@@ -15,7 +15,7 @@ export class ArrayComponent {
     array!.innerHTML = "";
 
     for(var i=0; i<this.size; i++){
-      let height = Math.floor((Math.random()*460)+25)
+      let height = Math.floor((Math.random()*333)+25)
       let bar = document.createElement('bar');
       bar.id = i.toString();
       bar.className = 'bar';
